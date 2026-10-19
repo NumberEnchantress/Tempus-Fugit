@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tempus Fugit</title>
+  <link rel="stylesheet" href="../shared/clock.css">
+  <link rel="stylesheet" href="newtab.css">
+</head>
+<body>
+  <main class="clock">
+    <canvas class="face" id="face"></canvas>
+    <div class="tempus" id="tempus"></div>
+    <div class="local" id="local"></div>
+    <div class="system" id="system"></div>
+    <div class="warning" id="warning" hidden></div>
+    <a href="../setup/setup.html" id="setup-link" hidden>set up location</a>
+    <div class="accuracy" id="accuracy" hidden></div>
+    <div class="equation" id="equation"></div>
+  </main>
+  <footer><a href="../setup/setup.html">location setup</a> · <a href="../options/options.html">settings</a></footer>
+  <script type="module" src="newtab.js"></script>
+</body>
+</html>

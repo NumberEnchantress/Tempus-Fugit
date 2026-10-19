@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Tempus Fugit",
+  "version": "2.0",
+  "description": "Longitude time: UTC plus 4 minutes for every degree east, on the new tab page and in the toolbar.",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "tempus-fugit@example.org",
+      "strict_min_version": "128.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+  "action": {
+    "default_title": "Tempus Fugit",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png"
+    }
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab/newtab.html"
+  },
+  "chrome_settings_overrides": {
+    "homepage": "newtab/newtab.html"
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
+  "permissions": ["storage", "geolocation"]
+}

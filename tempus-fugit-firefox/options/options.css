@@ -1,0 +1,7 @@
+main { max-width: 560px; margin: 16px auto; padding: 0 16px; }
+fieldset { border: 0; padding: 0; margin: 1.2em 0 0; }
+legend { font-weight: 600; margin-bottom: 0.3em; }
+.note, .error { font-size: 13px; }
+.note { color: var(--dim); }
+.error { color: var(--slow); }
+input[type="range"] { width: 100%; }

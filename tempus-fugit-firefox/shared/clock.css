@@ -1,0 +1,25 @@
+:root {
+  color-scheme: light dark;
+  --bg: #faf7f0; --ink: #1c1b19; --dim: rgba(28, 27, 25, 0.6); --ghost: rgba(28, 27, 25, 0.25);
+  --halo: rgba(250, 247, 240, 0.9); --fast: #2e7d5b; --slow: #b4532a;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1b1f; --ink: #f4f1ea; --dim: rgba(244, 241, 234, 0.65); --ghost: rgba(244, 241, 234, 0.3);
+    --halo: rgba(28, 27, 31, 0.9); --fast: #7fd1a8; --slow: #f0a07a;
+  }
+}
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 15px/1.4 system-ui, sans-serif; font-variant-numeric: tabular-nums;
+}
+.clock { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.face { display: block; aspect-ratio: 1; }
+.tempus { font-weight: 300; margin-top: 0.4em; white-space: nowrap; }
+.local { margin-top: 0.2em; }
+.system { color: var(--dim); }
+.warning, .accuracy { color: var(--slow); margin-top: 0.8em; }
+.equation { color: var(--dim); font-size: 12px; margin-top: 0.8em; }
+a { color: inherit; }
+label.switch { display: inline-flex; gap: 0.5em; align-items: center; }
+[hidden] { display: none !important; }

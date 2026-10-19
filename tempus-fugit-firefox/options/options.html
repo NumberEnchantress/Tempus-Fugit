@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tempus Fugit · settings</title>
+  <link rel="stylesheet" href="../shared/clock.css">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main>
+    <fieldset><legend>time change mode</legend>
+      <label><input type="radio" name="mode" value="smooth"> smooth</label>
+      <label><input type="radio" name="mode" value="instant"> instant</label>
+    </fieldset>
+    <fieldset><legend id="x-label">maximum smoothing time</legend>
+      <input type="range" id="x" min="1" max="60" step="1">
+    </fieldset>
+    <fieldset>
+      <label><input type="checkbox" id="trend"> trend-aware smoothing</label>
+      <p class="note">Off: follows the last half minute of fixes. On: follows the trend over about an hour, for noisy positions or long, steady travel.</p>
+    </fieldset>
+    <fieldset><button id="correct">correct clock now</button></fieldset>
+    <fieldset><legend>precision</legend>
+      <label><input type="radio" name="precision" value="seconds"> seconds</label>
+      <label><input type="radio" name="precision" value="minutes"> minutes</label>
+    </fieldset>
+    <fieldset><legend>face (new tab)</legend>
+      <label><input type="radio" name="face" value="analog"> analog</label>
+      <label><input type="radio" name="face" value="digital"> digital</label>
+    </fieldset>
+    <fieldset><legend>widget face (toolbar popup)</legend>
+      <label><input type="radio" name="widget-face" value="analog"> analog</label>
+      <label><input type="radio" name="widget-face" value="digital"> digital</label>
+    </fieldset>
+    <fieldset><label><input type="checkbox" id="freeze"> freeze offset</label></fieldset>
+    <fieldset><legend id="ping-label">maximum ping frequency</legend>
+      <input type="range" id="ping" min="0" max="6" step="1">
+      <p class="note" id="ping-warning" hidden><b>Frequent location checks use more battery.</b> Pinging every 10 s or faster can noticeably increase battery use while moving. Still, the phone checks once a minute, whatever this setting.</p>
+      <p class="note">In Firefox the browser sets how often positions arrive. This setting and the distance budget decide which of them are applied.</p>
+    </fieldset>
+    <fieldset><legend>distance budget, metres</legend>
+      <input type="number" id="budget" min="10" max="10000" step="1">
+      <span class="error" id="budget-error" hidden>Enter a whole number from 10 to 10000</span>
+    </fieldset>
+  </main>
+  <script type="module" src="options.js"></script>
+</body>
+</html>

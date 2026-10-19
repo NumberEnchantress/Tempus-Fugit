@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tempus Fugit · location setup</title>
+  <link rel="stylesheet" href="../shared/clock.css">
+  <link rel="stylesheet" href="setup.css">
+</head>
+<body>
+  <main>
+    <h1>Tempus Fugit</h1>
+    <p>Tempus Fugit shows longitude time: UTC plus 4 minutes for every degree east. It needs your position while a clock page is open.</p>
+
+    <section>
+      <h2>Location permission</h2>
+      <p>State: <strong id="state">checking…</strong></p>
+      <p><button id="allow">Allow location</button></p>
+      <p id="result" class="note"></p>
+      <label class="switch"><input type="checkbox" id="location"> location</label>
+    </section>
+
+    <section id="windows" hidden>
+      <h2>Windows location</h2>
+      <p>Firefox received no position. On Windows, open Settings → Privacy &amp; security → Location, turn Location services on, and turn on “Let desktop apps access your location”.</p>
+      <p><a href="ms-settings:privacy-location">Open Windows location settings</a></p>
+    </section>
+
+    <section>
+      <h2>Accuracy</h2>
+      <p id="accuracy" class="note">No position read yet.</p>
+    </section>
+
+    <section class="note">
+      <h2>Privacy</h2>
+      <p>Your position is used only on this computer, while a Tempus Fugit page is open. Only the time zone name and the clock offset are stored, never coordinates. Firefox itself may work out the position through a network location service, depending on your system.</p>
+      <p>Time zone boundaries: timezone-boundary-builder, release 2026e, © OpenStreetMap contributors, under the Open Database License (ODbL 1.0); see data/tiles/LICENSE-ODbL.txt.</p>
+    </section>
+
+    <p><a href="../newtab/newtab.html">Open the clock</a> · <a href="../options/options.html">Settings</a></p>
+  </main>
+  <script type="module" src="setup.js"></script>
+</body>
+</html>
