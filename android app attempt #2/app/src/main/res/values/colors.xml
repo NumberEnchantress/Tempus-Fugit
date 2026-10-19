@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="widget_background">#F2FAF7F0</color>
+    <color name="tf_ink">#FF1C1B19</color>
+    <color name="tf_dim">#991C1B19</color>
+    <color name="tf_ghost">#401C1B19</color>
+    <color name="tf_face">#00000000</color>
+    <color name="tf_halo">#E6FAF7F0</color>
+    <color name="tf_fast">#FF2E7D5B</color>
+    <color name="tf_slow">#FFB4532A</color>
+    <color name="icon_background">#FF14213D</color>
+    <color name="icon_face">#FFF4F1EA</color>
+    <color name="icon_hands">#FF14213D</color>
+</resources>

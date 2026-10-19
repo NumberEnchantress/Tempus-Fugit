@@ -1,0 +1,12 @@
+source: timezone-boundary-builder 2026e timezones-now (timezones-now.geojson.zip)
+features (zones): 65, distinct tzids: 65
+polygons: 725, rings: 825
+input vertices: 3674687 (3673862 without ring-closing duplicates)
+kept vertices: 455649 (12.40% of 3673862), tolerance 100 m
+lost polygons: 25 (0.2 km2), lost rings: 39 (of which holes: 14, 0.16 km2)
+kept polygons: 700
+non-plain rings: Pacific/Auckland poly 10 ring 0 polar (41 vertices, lon -180.000..180.000)
+tile files: 471, pieces: 1457, tile vertices: 459408
+total gzipped tile size: 1610810 bytes
+tile size median / p90 / max: 758 / 9707 / 62270 bytes (max: 9_2.bin.gz)
+all.bin.gz: 1615341 bytes (700 pieces)

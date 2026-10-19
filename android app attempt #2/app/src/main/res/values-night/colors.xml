@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="widget_background">#E61C1B19</color>
+    <color name="tf_ink">#FFF4F1EA</color>
+    <color name="tf_dim">#A6F4F1EA</color>
+    <color name="tf_ghost">#4DF4F1EA</color>
+    <color name="tf_halo">#E61C1B1F</color>
+    <color name="tf_fast">#FF7FD1A8</color>
+    <color name="tf_slow">#FFF0A07A</color>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            style="@style/Settings.Title"
+            android:text="@string/settings" />
+
+        <TextView style="@style/Settings.Label" android:text="@string/mode" />
+        <RadioGroup
+            android:id="@+id/mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/mode_smooth" style="@style/Settings.Radio" android:text="@string/smooth" />
+            <RadioButton android:id="@+id/mode_instant" style="@style/Settings.Radio" android:text="@string/instant" />
+        </RadioGroup>
+
+        <TextView android:id="@+id/x_label" style="@style/Settings.Label" />
+        <SeekBar
+            android:id="@+id/x"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:max="59" />
+
+        <Switch android:id="@+id/trend" style="@style/Settings.Switch" android:text="@string/trend_aware" />
+        <TextView style="@style/Settings.Note" android:text="@string/trend_note" />
+
+        <Button
+            android:id="@+id/correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/correct"
+            android:textAllCaps="false" />
+
+        <TextView style="@style/Settings.Label" android:text="@string/precision" />
+        <RadioGroup
+            android:id="@+id/precision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/precision_seconds" style="@style/Settings.Radio" android:text="@string/seconds" />
+            <RadioButton android:id="@+id/precision_minutes" style="@style/Settings.Radio" android:text="@string/minutes" />
+        </RadioGroup>
+
+        <TextView style="@style/Settings.Label" android:text="@string/face" />
+        <RadioGroup
+            android:id="@+id/face"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/face_analog" style="@style/Settings.Radio" android:text="@string/analog" />
+            <RadioButton android:id="@+id/face_digital" style="@style/Settings.Radio" android:text="@string/digital" />
+        </RadioGroup>
+
+        <TextView style="@style/Settings.Label" android:text="@string/widget_face" />
+        <RadioGroup
+            android:id="@+id/widget_face"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/widget_face_analog" style="@style/Settings.Radio" android:text="@string/analog" />
+            <RadioButton android:id="@+id/widget_face_digital" style="@style/Settings.Radio" android:text="@string/digital" />
+        </RadioGroup>
+
+        <Switch android:id="@+id/widget_seconds" style="@style/Settings.Switch" android:text="@string/widget_seconds" />
+
+        <Switch android:id="@+id/freeze" style="@style/Settings.Switch" android:text="@string/freeze" />
+
+        <TextView android:id="@+id/ping_label" style="@style/Settings.Label" />
+        <SeekBar
+            android:id="@+id/ping"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:max="6" />
+        <TextView
+            android:id="@+id/ping_warning"
+            style="@style/Settings.Note"
+            android:text="@string/ping_warning"
+            android:visibility="gone" />
+
+        <TextView style="@style/Settings.Label" android:text="@string/distance_budget" />
+        <EditText
+            android:id="@+id/budget"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="5"
+            android:minHeight="48dp" />
+
+        <TextView style="@style/Settings.Label" android:text="@string/about" />
+        <TextView style="@style/Settings.Note" android:text="@string/about_text" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tempus Fugit</string>
+    <string name="location">location</string>
+    <string name="settings">settings</string>
+    <string name="waiting">waiting for location</string>
+    <string name="warning">%1$s · offset may be out of date</string>
+
+    <string name="mode">time change mode</string>
+    <string name="smooth">smooth</string>
+    <string name="instant">instant</string>
+    <string name="x_label">maximum smoothing time - %1$d min</string>
+    <string name="trend_aware">trend-aware smoothing</string>
+    <string name="trend_note">Off: follows the last half minute of fixes. Best for GPS with turns and speed changes. On: follows the trend over about an hour. Best for noisy positions or long, steady travel.</string>
+    <string name="correct">correct clock now</string>
+    <string name="correct_confirm">Set the clock to the target now? It may jump, including backwards.</string>
+    <string name="correct_yes">Set now</string>
+    <string name="precision">precision</string>
+    <string name="seconds">seconds</string>
+    <string name="minutes">minutes</string>
+    <string name="face">face</string>
+    <string name="widget_face">widget face</string>
+    <string name="analog">analog</string>
+    <string name="digital">digital</string>
+    <string name="widget_seconds">widget seconds</string>
+    <string name="widget_seconds_title">Widget seconds uses more battery.</string>
+    <string name="widget_seconds_body">The widget redraws every second, which wakes the phone about 3,600 times an hour. Expect noticeably higher battery use while a seconds widget is on the home screen. Minutes is the default and is much lighter. Keep it on only if you need the second hand on the widget.</string>
+    <string name="turn_on">Turn on</string>
+    <string name="keep_minutes">Keep minutes</string>
+    <string name="freeze">freeze offset</string>
+    <string name="ping_label">maximum ping frequency - one ping per %1$d s</string>
+    <string name="ping_warning"><b>Frequent location checks use more battery.</b> Pinging every 10 s or faster can noticeably increase battery use while moving. Still, the phone checks once a minute, whatever this setting.</string>
+    <string name="distance_budget">distance budget, metres</string>
+    <string name="budget_error">Enter a whole number from 10 to 10000</string>
+    <string name="about">about</string>
+    <string name="about_text">Tempus Fugit shows longitude time: UTC plus 4 minutes for every degree east, with no daylight saving time.\n\nLocation is used only on this phone and only while the app is open. The app has no network access. Only the time zone name and the clock offset are stored, never coordinates.\n\nTime zone boundaries: timezone-boundary-builder, release 2026e (timezones-now), by Evan Siroky and contributors. Data © OpenStreetMap contributors, available under the Open Database License (ODbL 1.0). The simplified, tiled zone dataset bundled with this app is a derived database and is also available under the ODbL. Daylight saving rules come from the IANA time zone database built into Android.</string>
+
+    <string name="preview_time" translatable="false">tempus fugit - 12:00</string>
+    <string name="preview_local">local time - 12:16</string>
+    <string name="widget_description">Longitude time, with the analog face</string>
+</resources>
